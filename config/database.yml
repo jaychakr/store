@@ -26,16 +26,36 @@ test:
 production:
   primary:
     <<: *default
-    database: storage/production.sqlite3
+    #database: storage/production.sqlite3
+    database: store_4gld
+    username: store_4gld_user
+    password: aILdyUKUWfcmoHOwyj6zhsdhOZfFCrqP
+    host: dpg-cvkpbi2dbo4c73f9qnng-a
+    port: 5432
   cache:
     <<: *default
-    database: storage/production_cache.sqlite3
-    migrations_paths: db/cache_migrate
+    #database: storage/production_cache.sqlite3
+    #migrations_paths: db/cache_migrate
+    database: store_4gld
+    username: store_4gld_user
+    password: aILdyUKUWfcmoHOwyj6zhsdhOZfFCrqP
+    host: dpg-cvkpbi2dbo4c73f9qnng-a
+    port: 5432
   queue:
     <<: *default
-    database: storage/production_queue.sqlite3
-    migrations_paths: db/queue_migrate
+    #database: storage/production_queue.sqlite3
+    #migrations_paths: db/queue_migrate
+    database: store_4gld
+    username: store_4gld_user
+    password: aILdyUKUWfcmoHOwyj6zhsdhOZfFCrqP
+    host: dpg-cvkpbi2dbo4c73f9qnng-a
+    port: 5432
   cable:
     <<: *default
-    database: storage/production_cable.sqlite3
-    migrations_paths: db/cable_migrate
+    #database: storage/production_cable.sqlite3
+    #migrations_paths: db/cable_migrate
+    database: store_4gld
+    username: store_4gld_user
+    password: aILdyUKUWfcmoHOwyj6zhsdhOZfFCrqP
+    host: dpg-cvkpbi2dbo4c73f9qnng-a
+    port: 5432
