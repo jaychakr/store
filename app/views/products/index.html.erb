@@ -1,4 +1,12 @@
-<h1>Products#index</h1>
-<p>Find me in app/views/products/index.html.erb</p>
-<p> A simple site will be available at this location soon </p>
-<img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fykx1n1e49o9haiu5khwi.jpg" width="375px"/>
+<h1>Products</h1>
+
+<%= link_to "Add a New Product", new_product_path %>
+<br><br>
+Current products:
+<div id="products">
+  <% @products.each do |product| %>
+    <div>
+      <%= link_to product.name, product %>
+    </div>
+  <% end %>
+</div>
